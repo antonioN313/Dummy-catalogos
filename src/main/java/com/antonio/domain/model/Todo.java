@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 public class Todo {
     private Integer id;
     private String todo;        // texto
-    private Boolean completo;
-    private Integer usuarioid;
+    private Boolean completed;
+    private Integer userId;
 }
