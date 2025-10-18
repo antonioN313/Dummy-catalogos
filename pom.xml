@@ -19,19 +19,14 @@
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>2.16.3</version>
-    </dependency>
-    <dependency>
-      <groupId>com.fasterxml.jackson.datatype</groupId>
-      <artifactId>jackson-datatype-jsr310</artifactId>
-      <version>2.16.3</version>
+      <version>2.20.0</version>
     </dependency>
 
     <!-- Lombok -->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.34</version>
+      <version>1.18.42</version>
       <scope>provided</scope>
     </dependency>
 
@@ -56,6 +51,14 @@
           <compilerArgs>
             <arg>-parameters</arg>
           </compilerArgs>
+          <!-- CONFIGURAÇÃO DO LOMBOK ANNOTATION PROCESSOR -->
+          <annotationProcessorPaths>
+            <path>
+              <groupId>org.projectlombok</groupId>
+              <artifactId>lombok</artifactId>
+              <version>1.18.42</version>
+            </path>
+          </annotationProcessorPaths>
         </configuration>
       </plugin>
 
@@ -72,7 +75,7 @@
               <createDependencyReducedPom>false</createDependencyReducedPom>
               <transformers>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>com.antonio.app.ConsoleApp</mainClass>
+                  <mainClass>com.antonio.adapter.console.ConsoleApp</mainClass>
                 </transformer>
               </transformers>
             </configuration>
