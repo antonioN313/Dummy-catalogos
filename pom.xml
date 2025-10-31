@@ -41,6 +41,7 @@
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
+      <version>2.4.240</version>
       <scope>runtime</scope>
     </dependency>
 
@@ -48,24 +49,26 @@
     <dependency>
       <groupId>org.springframework.security</groupId>
       <artifactId>spring-security-crypto</artifactId>
+      <version>6.5.6</version>
     </dependency>
 
     <!-- JWT Support -->
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
       <artifactId>jjwt-api</artifactId>
-      <version>0.12.3</version>
+      <version>0.13.0</version>
+      <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
       <artifactId>jjwt-impl</artifactId>
-      <version>0.12.3</version>
+      <version>0.13.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
       <artifactId>jjwt-jackson</artifactId>
-      <version>0.12.3</version>
+      <version>0.13.0</version>
       <scope>runtime</scope>
     </dependency>
 
@@ -78,36 +81,48 @@
 
     <!-- Rate Limiting - Bucket4j -->
     <dependency>
-      <groupId>com.github.vladimir-bukhtoyarov</groupId>
+      <groupId>com.bucket4j</groupId>
       <artifactId>bucket4j-core</artifactId>
-      <version>8.7.0</version>
+      <version>8.10.1</version>
     </dependency>
 
     <!-- Password Validation -->
+    <!-- https://mvnrepository.com/artifact/org.passay/passay -->
     <dependency>
       <groupId>org.passay</groupId>
       <artifactId>passay</artifactId>
-      <version>1.6.4</version>
+      <version>1.6.6</version>
     </dependency>
 
     <!-- Apache Commons Text (para sanitização) -->
+    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-text -->
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-text</artifactId>
-      <version>1.11.0</version>
+      <version>1.14.0</version>
     </dependency>
 
     <!-- Testing -->
+    <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
+      <version>3.5.7</version>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-test -->
     <dependency>
       <groupId>org.springframework.security</groupId>
       <artifactId>spring-security-test</artifactId>
+      <version>6.5.6</version>
       <scope>test</scope>
     </dependency>
+      <dependency>
+          <groupId>org.projectlombok</groupId>
+          <artifactId>lombok</artifactId>
+          <version>1.18.42</version>
+          <scope>provided</scope>
+      </dependency>
   </dependencies>
 
   <build>
